@@ -1,0 +1,46 @@
+/* Background color utilities */
+@each $color, $value in var(--theme-colors-map) {
+  .bg-$(color) {
+    background-color: $(value);
+  }
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+/* end of background color utilities */
+/* Border radius utility */
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+/* end of border radius utility */
+
+/* Fixed size utility */
+.f-w-5 {
+  width: 1.25rem !important;
+}
+.f-w-6 {
+  width: 1.5rem !important;
+}
+
+.f-h-5 {
+  height: 1.25rem !important;
+}
+
+.f-h-12 {
+  height: 3rem !important;
+}
+/* end of fixed size utility */
+
